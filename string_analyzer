@@ -1,0 +1,15 @@
+from string_package import count_words, count_characters, reverse_string, remove_punctuations, capitalize_words, average_word_length
+
+sentence = input("Please enter a sentence: ")
+reversed_sentence = reverse_string(sentence)
+capitalized_reverse_sentence = capitalize_words(sentence)
+print(capitalized_reverse_sentence)
+
+clean_sentence = remove_punctuations(sentence)
+
+print("Character count: " + str(count_characters(clean_sentence)))
+print("Word count: " + str(count_words(clean_sentence)))
+print("Average word length: " + str(average_word_length(clean_sentence)))
+
+
+
